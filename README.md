@@ -1,3 +1,5 @@
+![Covid-19 Tracker](./public/covid-19-tracker-homepage.png)
+
 _Future edits:_
 
 1. Change the top right 'card' to reflect USA Country total
