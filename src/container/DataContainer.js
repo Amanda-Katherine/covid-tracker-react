@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import TallyCard from '../components/GridCards/tallyCard';
+import TallyChart from '../components/GridCards/totalChart';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -58,6 +59,7 @@ export default function DataContainer(props) {
         </Grid>
         <Grid item xs>
           <Paper className={classes.paper}>
+            {/* <TallyChart worldHistoryData={worldHistoryData} /> */}
         <Grid item xs={2}>
           <Paper className={classes.paper} id="hide">
             xs
