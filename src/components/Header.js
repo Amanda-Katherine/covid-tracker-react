@@ -50,6 +50,7 @@ export default function Header() {
       <CssBaseline />
       <Container component="main" className={classes.main} maxWidth="sm">
         <Typography variant="h3" component="h1">
+          Covid-19 Tracker
         </Typography>
         {/* <Typography variant="h5" component="h2" gutterBottom>
           {'Pin a footer to the bottom of the viewport.'}
