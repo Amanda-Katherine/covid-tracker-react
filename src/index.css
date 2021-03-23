@@ -46,3 +46,6 @@ html {
   visibility: hidden;
 }
 
+#auto-grid {
+  padding: 5;
+}
