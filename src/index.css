@@ -40,3 +40,9 @@ html {
   height: 100%;
 }
 
+#hide {
+  background-color: transparent;
+  padding-bottom: 1em;
+  visibility: hidden;
+}
+
