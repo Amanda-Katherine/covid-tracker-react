@@ -18,12 +18,24 @@ export default function Example(props) {
         <HorizontalGridLines style={{ stroke: '#B7E9ED' }} />
         <VerticalGridLines style={{ stroke: '#B7E9ED' }} />
         <XAxis
+          title="Date"
           style={{
             line: { stroke: '#ADDDE1' },
             ticks: { stroke: '#ADDDE1' },
             text: { stroke: 'none', fill: '#6b6b76', fontWeight: 600 },
           }}
         />
+        <YAxis title="Total Cases" />
+              style={{
+                strokeLinejoin: 'round',
+                strokeWidth: 4,
+                opacity: 0.2,
+                backgroundColor: 'transparent',
+              }}
+            />
+          )}
+        </>
+
         <LineSeries className="second-series" data={null} />
         <LineSeries
           className="third-series"
