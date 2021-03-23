@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
+import DataContainer from './container/DataContainer';
 import StickyFooter from './components/Footer';
 import Particles from 'react-particles-js';
 import { fetchWorldData, fetchWorldHistoryData } from './actions/api.js';
@@ -22,9 +23,16 @@ class App extends React.Component {
   }
 
   render() {
+    const { worldData, worldHistoryData } = this.state;
     return (
       <div className="App">
         <Header />
+
+        <DataContainer
+          worldData={worldData}
+          worldHistoryData={worldHistoryData}
+        ></DataContainer>
+
         <StickyFooter />
 
         <Particles
