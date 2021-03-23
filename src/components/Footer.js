@@ -48,6 +48,7 @@ export default function StickyFooter() {
       <footer className={classes.footer}>
         <Container maxWidth="sm">
           <Typography variant="body1" color="textSecondary">
+            Data Obtained from the Novel COVID API
           </Typography>
           {/* <Copyright /> */}
         </Container>
