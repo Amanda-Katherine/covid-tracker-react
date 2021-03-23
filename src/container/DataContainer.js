@@ -17,6 +17,14 @@ const useStyles = makeStyles((theme) => ({
 
 export default function DataContainer(props) {
   const classes = useStyles();
+  const worldData = props.worldData;
+  const worldHistoryData = props.worldHistoryData;
+  //release conditional once USA default fetch request is created
+  if (!!props.countryData) {
+    const countryData = props.countryData;
+  }
+  // const { totalCases, todayCases, totalDeaths, todayDeaths } = props.worldData;
+  // debugger;
   return (
     <div className={classes.root}>
       <Grid container spacing={2}>
