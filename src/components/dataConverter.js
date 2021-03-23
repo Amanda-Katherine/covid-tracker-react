@@ -3,6 +3,9 @@ class DataConverter extends Component {
   mapDataPoints = () => {
     let totalCases = this.props.worldHistoryData.totalCases || {};
     if (!!totalCases !== {}) {
+      let totalCasesDataSet = Object.keys(totalCases).reduce((array, key) => {
+        return [...array, { x: key, y: totalCases[key] }];
+      }, []);
     }
   };
   render() {
