@@ -19,6 +19,12 @@ import Container from '@material-ui/core/Container';
 // }
 
 const useStyles = makeStyles((theme) => ({
+  title: {
+    fontFamily: 'Anton',
+  },
+  bold: {
+    fontWeight: 'bold',
+  },
   root: {
     display: 'flex',
     flexDirection: 'column',
@@ -49,14 +55,14 @@ export default function Header() {
     <div className={classes.root}>
       <CssBaseline />
       <Container component="main" className={classes.main} maxWidth="sm">
-        <Typography variant="h3" component="h1">
+        <Typography className={classes.title} variant="h3" component="h1">
           Covid-19 Tracker
         </Typography>
         {/* <Typography variant="h5" component="h2" gutterBottom>
           {'Pin a footer to the bottom of the viewport.'}
           {'The footer will move as the main element of the page grows.'}
         </Typography> */}
-        <Typography variant="body1">
+        <Typography variant="body1" className={classes.bold}>
           Tracking Global and Country Data
         </Typography>
       </Container>
