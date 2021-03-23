@@ -10,6 +10,7 @@ export default function tallyCard(data) {
       <Row gutter={16}>
         <Col span={8}>
           <Card title={title} bordered={false}>
+            <hr />
           </Card>
         </Col>
         <Col span={4}>
