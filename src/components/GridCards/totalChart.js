@@ -16,7 +16,7 @@ export default function Example(props) {
   return (
     <div>
       <h3>Cumulative Global Totals</h3>
-      <XYPlot width={300} height={300}>
+      <XYPlot width={400} height={300}>
         <HorizontalGridLines style={{ stroke: '#B7E9ED' }} />
         <VerticalGridLines style={{ stroke: '#B7E9ED' }} />
         <XAxis
