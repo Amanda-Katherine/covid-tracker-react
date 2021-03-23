@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import TotalChart from './GridCards/totalChart';
+
 class DataConverter extends Component {
   mapDataPoints = () => {
     let totalCases = this.props.worldHistoryData.totalCases || {};
@@ -6,6 +8,11 @@ class DataConverter extends Component {
       let totalCasesDataSet = Object.keys(totalCases).reduce((array, key) => {
         return [...array, { x: key, y: totalCases[key] }];
       }, []);
+      return (
+        <>
+          <TotalChart totalGlobalCasesDataSet={totalCasesDataSet} />
+        </>
+      );
     }
   };
   render() {
@@ -18,3 +25,4 @@ class DataConverter extends Component {
     );
   }
 }
+export default DataConverter;
