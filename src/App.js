@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import StickyFooter from './components/Footer';
 import Particles from 'react-particles-js';
+import { fetchWorldData, fetchWorldHistoryData } from './actions/api.js';
 
 class App extends React.Component {
   state = {
@@ -11,6 +12,15 @@ class App extends React.Component {
     data: {},
     country: '',
   };
+
+  async componentDidMount() {
+    const fetchedWorldData = await fetchWorldData();
+    this.setState({ worldData: fetchedWorldData });
+
+    const fetchedWorldHistoryData = await fetchWorldHistoryData();
+    this.setState({ worldHistoryData: fetchedWorldHistoryData });
+  }
+
   render() {
     return (
       <div className="App">
