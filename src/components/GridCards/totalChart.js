@@ -28,6 +28,17 @@ export default function Example(props) {
           }}
         />
         <YAxis title="Total Cases" />
+        <>
+          {{ historicalGlobalCases } && (
+            <LineSeries
+              className="total-cases"
+              // data={[
+              //   { x: 1, y: 3 },
+              //   { x: 2, y: 5 },
+              //   { x: 3, y: 15 },
+              //   { x: 4, y: 12 },
+              // ]}
+              data={{ historicalGlobalCases }}
               style={{
                 strokeLinejoin: 'round',
                 strokeWidth: 4,
