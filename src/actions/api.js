@@ -15,3 +15,16 @@ export const fetchWorldData = async () => {
   console.log(worldVariables);
   return worldVariables;
 };
+
+export const fetchWorldHistoryData = async () => {
+  const response = await fetch(`${worldHistoryUrl}`);
+  const historyData = await response.json();
+  let worldHistoryVariables = {
+    totalCases: historyData.cases,
+    totalDeaths: historyData.deaths,
+  };
+  console.log(historyData);
+  console.log(worldHistoryVariables);
+  //   debugger;
+  return worldHistoryVariables;
+};
