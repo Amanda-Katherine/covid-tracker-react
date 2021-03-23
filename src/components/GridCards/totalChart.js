@@ -11,6 +11,8 @@ import {
 } from 'react-vis';
 
 export default function Example(props) {
+  const historicalGlobalCases = props.totalGlobalCasesDataSet;
+
   return (
     <div>
       <h3>Cumulative Global Totals</h3>
