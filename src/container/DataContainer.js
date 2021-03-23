@@ -20,17 +20,33 @@ export default function DataContainer(props) {
     <div className={classes.root}>
       <Grid container spacing={2}>
         <Grid item xs>
+          <Paper className={classes.paper} id="hide">
+            xs
+          </Paper>
+        </Grid>
         <Grid item xs={4}>
           <Paper className={classes.paper} worldData={worldData}>
           </Paper>
         </Grid>
         <Grid item xs={4}>
           <Paper className={classes.paper}>
+        <Grid item xs>
+          <Paper className={classes.paper} id="hide">
+            xs
           </Paper>
         </Grid>
       </Grid>
+      <Grid container spacing={3}>
+        <Grid item xs={2}>
+          <Paper className={classes.paper} id="hide">
+            xs
+          </Paper>
+        </Grid>
         <Grid item xs>
           <Paper className={classes.paper}>
+        <Grid item xs={2}>
+          <Paper className={classes.paper} id="hide">
+            xs
           </Paper>
         </Grid>
       </Grid>
