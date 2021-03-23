@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import StickyFooter from './components/Footer';
 import Particles from 'react-particles-js';
 
 class App extends React.Component {
@@ -12,6 +13,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <StickyFooter />
+
         <Particles
           className="particles-canvas"
           params={{
