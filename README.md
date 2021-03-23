@@ -1,3 +1,21 @@
+_Future edits:_
+
+1. Change the top right 'card' to reflect USA Country total
+
+- https://disease.sh/v3/covid-19/countries/United%20States?strict=true
+
+2. Add total and daily deaths to global and USA cards
+
+3. Currently have access to historical world total cases, but these values are not being shown. Need to edit the axes to convert to a timeline format for the x axis rather than numberical value.
+
+- reference: http://uber.github.io/react-vis/documentation/api-reference/axes
+
+4. Clean up and refactor code
+
+5. Future future edits would be to have the chart toggle between historical world data and then country data which would include a country dropdown to select the country.
+
+Novel Covid API Reference: https://corona.lmao.ninja/docs/#/COVID-19%3A%20JHUCSSE/get_v3_covid_19_historical_all
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
