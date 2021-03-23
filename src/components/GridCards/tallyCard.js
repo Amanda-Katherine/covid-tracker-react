@@ -1,6 +1,8 @@
 import { Card, Col, Row } from 'antd';
 import React from 'react';
 export default function tallyCard(data) {
+  let { totalCases, todayCases, totalDeaths, todayDeaths } = data.worldData;
+  //add in conditional for worldData or countryData once added in.
   return (
     <div className="site-card-wrapper">
       <Row gutter={16}>
