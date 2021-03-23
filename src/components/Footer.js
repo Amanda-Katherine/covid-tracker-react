@@ -1,0 +1,36 @@
+import React from 'react';
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
+const useStyles = makeStyles((theme) => ({
+  main: {
+    marginTop: theme.spacing(2),
+    marginBottom: theme.spacing(5),
+  },
+  footer: {
+    padding: theme.spacing(1, 2),
+    marginTop: 'auto',
+    marginBottom: 0,
+    backgroundColor:
+      theme.palette.type === 'light'
+        ? theme.palette.grey[200]
+        : theme.palette.grey[800],
+    minHeight: '10vh',
+  },
+}));
+
+export default function StickyFooter() {
+  const classes = useStyles();
+
+  return (
+    <div>
+      <div className={classes.main}></div>
+      <footer className={classes.footer}>
+        <Container maxWidth="sm">
+          <Typography variant="body1" color="textSecondary">
+          </Typography>
+        </Container>
+      </footer>
+    </div>
+  );
+}
