@@ -3,6 +3,12 @@ import './App.css';
 import Particles from 'react-particles-js';
 
 class App extends React.Component {
+  state = {
+    worldData: {},
+    worldHistoryData: {},
+    data: {},
+    country: '',
+  };
   render() {
     return (
       <div className="App">
