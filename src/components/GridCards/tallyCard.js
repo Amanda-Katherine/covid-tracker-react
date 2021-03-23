@@ -28,7 +28,31 @@ export default function tallyCard(data) {
             {totalCases}
           </Card>
         </Col>
+        {/* <Col span={8}>
+          <Card bordered={false}>
+            <hr />
+          </Card>
         </Col>
+        <Col span={8}>
+          <Card title="New Daily Deaths:" bordered={false}>
+            {todayDeaths}
+          </Card>
+        </Col>
+        <Col span={8}>
+          <Card title=" " bordered={false}>
+            <p></p>
+          </Card>
+        </Col>
+        <Col span={8}>
+          <Card title="Total Deaths:" bordered={false}>
+            {totalDeaths}
+          </Card>
+        </Col>
+        <Col span={8}>
+          <Card title=" " bordered={false}>
+            <p></p>
+          </Card>
+        </Col> */}
       </Row>
     </div>
   );
