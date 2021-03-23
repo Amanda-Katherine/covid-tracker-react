@@ -26,6 +26,7 @@ export default function DataContainer(props) {
         </Grid>
         <Grid item xs={4}>
           <Paper className={classes.paper} worldData={worldData}>
+            <TallyCard worldData={worldData} />
           </Paper>
         </Grid>
         <Grid item xs={4}>
