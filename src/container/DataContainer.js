@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import TallyCard from '../components/GridCards/tallyCard';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -31,6 +32,10 @@ export default function DataContainer(props) {
         </Grid>
         <Grid item xs={4}>
           <Paper className={classes.paper}>
+            {/* pass in countryData={countryData} once created */}
+            <TallyCard worldData={worldData} />
+          </Paper>
+        </Grid>
         <Grid item xs>
           <Paper className={classes.paper} id="hide">
             xs
