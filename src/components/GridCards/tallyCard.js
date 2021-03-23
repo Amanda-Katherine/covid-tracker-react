@@ -14,6 +14,9 @@ export default function tallyCard(data) {
           </Card>
         </Col>
         <Col span={4}>
+          <Card title="New Daily Cases:" bordered={false}>
+            {todayCases}
+          </Card>
         </Col>
         <Col span={4}>
           <Card title=" " bordered={false}>
@@ -21,6 +24,10 @@ export default function tallyCard(data) {
           </Card>
         </Col>
         <Col span={8}>
+          <Card title="Total Cases:" bordered={false}>
+            {totalCases}
+          </Card>
+        </Col>
         </Col>
       </Row>
     </div>
